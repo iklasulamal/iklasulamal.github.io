@@ -1,472 +1,283 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Portfolio</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Personal portfolio - Web Developer">
+	<meta name="keywords"
+		content="personal, portfolio, Portofolio, Personal, Personal Portofolio ,creative, Web Developer ">
+	<!-- Favicon -->
+	<!-- <link rel="shortcut icon" href="img/logo-new.png" type="image/x-icon"> -->
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
-    <!-- my fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/themify-icons.css" />
+	<link rel="stylesheet" href="css/animate.min.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/owl.carousel.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.min.css">
-    <title>My Curiculum Vitae</title>
 </head>
 
+<!-- <body oncontextmenu="return false;"> -->
+<!-- Aktifkan jika anti inspect elemnt -->
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-inverse navbar-light fixed-top" style="background-color:  #20c997;">
-        <div class="container">
-            <a class="navbar-brand" href="#">My Curiculum Vitae</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav my-2 my-lg-0">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#" onclick="ScrollTo('about')">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="ScrollTo('portofolio')">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="ScrollTo('contact')">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+	<!-- Preloder -->
+	<div id=" preloder">
+		<div class="loader"></div>
+	</div>
 
-    <!-- jumbotron -->
-    <div class="jumbotron ">
-        <div class="container text-center">
-            <img class="rounded-circle" src="img/profile.jpg" alt="">
-            <h1>Ulfah Nur Oktaviana</h1>
-            <p class="lead">Website Developer | Student</p>
-        </div>
-    </div>
+	<!-- Header section start -->
+	<header class="header-section">
+		<div class="container">
+			<div class="header-warp">
+				<!-- Site Logo -->
+				<!-- <a href="#" class="site-logo">
+					<img src="img/logo-new.png" alt="">
+				</a> -->
+				<!-- Site Menu -->
+				<div class="responsive-switch"><i class="fa fa-bars"></i></div>
+				<nav class="site-menu">
+					<div class="sm-close"><i class="ti-close"></i></div>
+					<ul class="menu-list">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#resume">Resume</a></li>
+						<li><a href="#works">Works</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
 
-    <!-- akhir jumbotron -->
+	<!-- Hero section start -->
+	<section class="hero-section hero-style-three" id="home">
+		<div id="bubble"></div>
+		<div class="typed-area">
+			<div class="container">
+				<!-- typed text -->
+				<h2><span id="typed-text"></span></h2>
+			</div>
+		</div>
+		<figure class="shap-image">
+			<img src="img/hero-shap.png" alt="">
+		</figure>
+	</section>
+	<!-- Hero section end -->
 
-    <!-- about -->
-    <section class="about" id="about">
-        <div class="container text-center">
-            <h2>About Me</h2>
-            <hr>
-            <div class="row justify-content-center">
-                <div class="col-sm-8 justify-content-center">
-                    <!-- deskripsi singkat -->
-                    <h4 class="justify-content-center">Profil</h4>
-                    <div class="text-justify">
-                        <p>
-                            Hallo perkenalkan nama saya Ulfah Nur Oktaviana teman-teman dapat memanggil saya Ulfah. saya
-                            memiliki kondisi
-                            kesehatan yang baik, selain itu saya juga mampu berkomunikasi dengan baik
-                            dalam tim maupun menjadi pembicara di suatu acara. sedangkan untuk ketertarikan saya adalah
-                            menjadi seorang full
-                            stack developer. semoga saya dapat internship di Hummasoft untuk meningkatkan dan belajar
-                            jauh lebih banyak lagi
-                            mengenai web developer
-                        </p>
-                    </div>
-                    <!-- akhir deskripsi singkat -->
+	<!-- About section start -->
+	<section class="about-section spad" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+					<figure>
+						<img src="/img/picture.png" alt="Profile">
+					</figure>
+				</div>
+				<div class="col-lg-6 about-text wow fadeInDown" data-wow-delay="0.5s">
+					<div class="about-title">
+						<h2>Introduce Myself</h2>
+						<h5>Who I am</h5>
+					</div>
+					<p>I am <span>Masalief Maulana</span>
+						. I'm a student at SMK 17 Agustus 1945. I was born and live on Surabaya.
+						I also work in software companies in Surabaya as an web developer.</p>
+					<div class="skills mt-5">
+						<!-- Skill item -->
+						<div class="single-progress-item">
+							<p>Analytic</p>
+							<div class="progress-bar-style" data-progress="87"></div>
+						</div>
+						<!-- Skill item -->
+						<div class="single-progress-item">
+							<p>Design</p>
+							<div class="progress-bar-style" data-progress="70"></div>
+						</div>
+						<!-- Skill item -->
+						<div class="single-progress-item">
+							<p>Coding</p>
+							<div class="progress-bar-style" data-progress="78"></div>
+						</div>
+						<!-- Skill item -->
+						<div class="single-progress-item">
+							<p>Leadership</p>
+							<div class="progress-bar-style" data-progress="80"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- services -->
+			<div class="service-slider owl-carousel spad pb-0">
+				<!-- item -->
+				<div class="service">
+					<i class="ti-settings"></i>
+					<div class="service-text">
+						<h3>Development</h3>
+						<p>Work efficiently and effectively to make good quality from our company</p>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="service">
+					<i class="ti-medall"></i>
+					<div class="service-text">
+						<h3>Best</h3>
+						<p>work with the best coder to lift higher quality and quantity</p>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="service">
+					<i class="ti-heart"></i>
+					<div class="service-text">
+						<h3>Love</h3>
+						<p>build with love and care from us</p>
+					</div>
+				</div>
+				<!-- item -->
+				<div class="service">
+					<i class="ti-key"></i>
+					<div class="service-text">
+						<h3>Security</h3>
+						<p>The best and most trusted protection to keep your database safety</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- About section end -->
 
-                    <!-- biodata diri -->
-                    <h4>Biodata Diri</h4>
-                    <div class="text-justify justify-content-center">
-                        <table class="styled-table">
-                            <thead>
-                                <tr>
-                                    <th>Judul</th>
-                                    <th>Keterangan</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="active-row">
-                                    <td>Nama</td>
-                                    <td>Ulfah Nur Oktaviana</td>
-                                </tr>
-                                <tr class="active-row">
-                                    <td>Jenis Kelamin</td>
-                                    <td>Perempuan</td>
-                                </tr>
-                                <tr class="active-row">
-                                    <td>Tempat/Tanggal Lahir</td>
-                                    <td>Tulungagung, 11 Oktober 1999</td>
-                                </tr>
-                                <tr class="active-row">
-                                    <td>Alamat</td>
-                                    <td>Desa Balesono RT 002, RW 002, Kec.Ngunut Kab.Tulungagung, Kode Pos : 66292, Jawa
-                                        Timur</td>
-                                </tr>
-                                <!-- and so on... -->
-                            </tbody>
-                        </table>
-                    </div>
-                    <!-- akhir biodata diri -->
+	<!-- Resume section start -->
+	<section class="resume-section spad" id="resume">
+		<div class="container">
+			<div class="section-title">
+				<p>Resume</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-10 col-xl-9 offset-lg-2 offset-xl-2">
+					Review item
+					<div class="resume-item wow fadeInUp" data-wow-delay="0.2s">
+						<div class="resume-year">
+							<h2>2017</h2>
+						</div>
+						<div class="resume-text">
+							<h3>First Learn Coding</h3>
+							<!-- <p>Until now</p> -->
+						</div>
+					</div>
+					Review item
+					<div class="resume-item wow fadeInUp" data-wow-delay="0.4s">
+						<div class="resume-year">
+							<h2>2019</h2>
+						</div>
+						<div class="resume-text">
+							<h3>First School in SMK 17 Agustus 1945</h3>
+							<!-- <p>Until now</p> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Resume section end -->
 
-                    <!-- pendidikan -->
-                    <h4 class="justify-content-center">Riwayat Pendidikan</h4>
-                    <div class="text-center justify-content-center">
-                        <div class="wrapper">
-                            <div class="timeline">
-                                <dl class="timeline--entry">
-                                    <dt class="timeline--entry__title">SMP (2006-2012)</dt>
-                                    <dd class="timeline--entry__detail">SD Negeri 026 Samarinda Sebrang
-                                </dl>
-                                <dl class="timeline--entry">
-                                    <dt class="timeline--entry__title">SMP (2012-2015)</dt>
-                                    <dd class="timeline--entry__detail">SMP Negeri 1 Kalidawir
-                                </dl>
-                                <dl class="timeline--entry">
-                                    <dt class="timeline--entry__title">SMA (2015-2018)</dt>
-                                    <dd class="timeline--entry__detail">SMA Negeri 1 Ngunut
-                                </dl>
-                                <dl class="timeline--entry">
-                                    <dt class="timeline--entry__title">Kuliah S1 (2018-Sekarang)</dt>
-                                    <dd class="timeline--entry__detail">Universitas Muhammadiyah Malang
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- akhir pendidikan -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- akhir about -->
+	<!-- Portfolio section start -->
+	<section class="portfolio-section spad" id="works">
+		<div class="container">
+			<div class="section-title">
+				<p>Works</p>
+				<h2>Letest Projects soon updated</h2>
+			</div>
+			<div class="text-center mt-5">
+				<a href="#" class="site-btn wow fadeInUp" data-wow-delay="0.2s">More Projects</a>
+			</div>
+		</div>
+	</section>
+	<!-- Portfolio section end -->
 
-    <!-- Modal -->
-    <!-- modal Belajar Fundamental Front-End -->
-    <div class="modal fade" id="fundamental" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Belajar Fundamental Front-End Dicoding</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img src="img/portfolio 4.jpg" style="width: 100%;" class="img-fluid" alt="Responsive image">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- AKhir belajar fundamental Frond-end Web -->
-    <!-- modal belajar dasar Pemrograman Web -->
-    <div class="modal fade" id="dasar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Belajar Fundamental Front-End Dicoding</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img src="img/portfolio 5.jpg" style="width: 100%;" class="img-fluid" alt="Responsive image">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- akhir modal belajar dasar pemrograman web -->
-    <!-- modal hmif -->
-    <div class="modal fade" id="hmif" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Anggota Divisi Minat Bakat 2019/2020</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img src="img/portfolio 6.JPG" style="width: 100%;" class="img-fluid" alt="Responsive image">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- akhir modal hmif -->
-    <!-- modal imc -->
-    <div class="modal fade" id="imc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Acara IMC (Informatic Maba Competition)</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img src="img/portfolio 7.jpg" style="width: 100%;" class="img-fluid" alt="Responsive image">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- akhir modal imc -->
-    <!-- modal lp3a -->
-    <div class="modal fade" id="lp3a" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Sertifikat Pelatihan Perekrutan Sahabat LP3A</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img src="img/portfolio 8.jpg" style="width: 100%;" class="img-fluid" alt="Responsive image">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- akhir modal lp3a -->
-    <!-- akhir modal -->
+	<!-- Contact section start -->
+	<section class="contact-section spad" id="contact">
+		<div class="container">
+			<div class="section-title">
+				<p>Contact</p>
+				<h2>Get in touch</h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2">
+					<div class="row">
+						<!-- contact info -->
+						<div class="col-sm-4 cont-info wow fadeInUp" data-wow-delay="0.2s">
+							<i class="ti-email"></i>
+							<a href="mailto:masaliefkerja@gmail.com">masaliefkerja@gmail.com</a>
+							<p>email</p>
+						</div>
+						<!-- contact info -->
+						<div class="col-sm-4 cont-info wow fadeInUp" data-wow-delay="0.4s">
+							<i class="ti-location-pin"></i>
+							<span>Bratang Gede 1 Tangkis no 36, Surabaya, ID </span>
+							<p>Address</p>
+						</div>
+						<!-- contact info -->
+						<div class="col-sm-4 cont-info wow fadeInUp" data-wow-delay="0.6s">
+							<i class="ti-mobile"></i>
+							<a href=" https://api.whatsapp.com/send?phone=6285156217662"><span>0851-5621-7662</span></a>
+							<p>Phone</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Contact section end -->
 
+	<!-- Footer section start -->
+	<footer class="footer-section spad set-bg" data-setbg="img/footer-bg.svg">
+		<div class="container">
+			<div class="social-links">
+				<a href="https://facebook.com/Viole403" target="_blank" class="facebook wow fadeInDown"
+					data-wow-delay="0.2s"><i class="fa fa-facebook"></i></a>
+				<a href="https://github.com/Viole403" target="_blank" class="facebook wow fadeInDown"
+					data-wow-delay="0.4s"><i class="fa fa-github"></i></a>
+				<a href="https://t.me/Viole403" target="_blank" class="facebook wow fadeInDown" data-wow-delay="0.6s"><i
+						class="fa fa-telegram"></i></a>
+			</div>
+			<!-- copyright -->
+			<p class="copyright">Copyright &copy; 2020, All rights Reserved.<br>Created by Maulana</p>
+		</div>
+	</footer>
+	<!-- Footer section end -->
 
-    <!-- portofolio -->
-    <section id="portofolio" class="portofolio pb-5">
-        <div class="container justify-content-center">
-            <div class="row  text-center pt-5">
-                <div class="col-md-12">
-                    <h2>Pengalaman</h2>
-                    <hr>
-                </div>
-            </div>
-            <!-- Pengalaman Web Developer -->
-            <div class="row justify-content-center">
-                <div class="col-md-12 text-center">
-                    <h4>Pengalaman Project & Pelatihan Web Developer</h4>
-                </div>
-                <div class="col-md card " style="width: 18rem;">
-                    <div class="image">
-                        <a href="https://bumdestanjungasri.com/" target="_blank"><img width="100%"
-                                class="img-thumbnail card-img-top" src="img/portfolio 1.png" alt=""></a>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Oktober-November 2020</h5>
-                        <p class="card-text">Membuat Website BUMDES (Badan Usaha Milik Desa) Tanjungan , Mojokerto
-                            menggunakan Framework Laravel.</p>
-                        <a class="btn btn-sm btn-success" href="https://bumdestanjungasri.com/"
-                            target="_blank">Lihat</a>
-                    </div>
-                </div>
-                <div class="col-md card " style="width: 18rem;">
-                    <div class="image">
-                        <a href="https://webgen-event.com/" target="_blank"><img width="100%"
-                                class="img-thumbnail card-img-top" src="img/portfolio 2.png" alt=""></a>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">November-Desember 2020</h5>
-                        <p class="card-text">Membuat Website Berisi Informasi Webinar Untuk Mahasiswa Brawijaya
-                            menggunakan Framework Laravel</p>
-                        <a class="btn btn-sm btn-success" href="https://webgen-event.com/" target="_blank">Lihat</a>
-                    </div>
-                </div>
-                <div class="col-md card " style="width: 18rem;">
-                    <div class="image">
-                        <a href="https://kedaiwebsite2020.web.app/" target="_blank"><img width="100%"
-                                class="img-thumbnail card-img-top" src="img/portfolio 3.png" alt=""></a>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Agustus 2020</h5>
-                        <p class="card-text">Membuat Usaha Pembuatan Website bersama rekan mahasiswa ini merupakan
-                            company profile kami yang dibangun menggunakan html, bootstrap, dan java script</p>
-                        <a class="btn btn-sm btn-success" href="https://kedaiwebsite2020.web.app/"
-                            target="_blank">Lihat</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md card" style="width: 18rem;">
-                    <div class="image">
-                        <a href="#"><img width="100%" class="img-thumbnail card-img-top" src="img/portfolio 4.jpg"
-                                alt=""></a>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Agustus 2020</h5>
-                        <p class="card-text">Menyelesaikan Kelas Pada Dicoding yaitu "Belajar Fundamental Front-End Web
-                            Developer"</p>
-                        <a class="btn btn-sm btn-success" href="" data-target="#fundamental"
-                            data-toggle="modal">Lihat</a>
-                    </div>
-                </div>
-                <div class="col-md card " style="width: 18rem;">
-                    <div class="image">
-                        <a href="#"><img width="100%" class="img-thumbnail card-img-top" src="img/portfolio 5.jpg"
-                                alt=""></a>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Juni 2020</h5>
-                        <p class="card-text">Menyelesaikan Kelas Pada Dicoding Dengan Judul "Belajar Dasar Pemrograman
-                            Web"</p>
-                        <a class="btn btn-sm btn-success" href="" data-target="#dasar" data-toggle="modal">Lihat</a>
-                    </div>
-                </div>
-            </div>
-            <!-- akhir pengalaman Web Developer -->
+	<!-- Jquery & Javascripts files  -->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/jquery.nav.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/magnific-popup.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/typed.min.js"></script>
+	<script src="js/scripts.js"></script>
 
-            <!-- pengalaman Organisasi -->
-            <div class="row justify-content-center">
-                <div class="col-md-12 text-center">
-                    <h4>Pengalaman Organisasi</h4>
-                </div>
-                <div class="col-md card " style="width: 18rem;">
-                    <div class="image">
-                        <a href="#"><img width="100%" class="img-thumbnail card-img-top" src="img/portfolio 6.JPG"
-                                alt=""></a>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Juli 2019 - Desember 2020</h5>
-                        <p class="card-text">Anggota Himpunan Mahasiswa Jurusan Informatika (HMIF) Periode Tahun
-                            2019-2020</p>
-                        <a class="btn btn-sm btn-success" href="" data-target="#hmif" data-toggle="modal">Lihat</a>
-                    </div>
-                </div>
-                <div class="col-md card " style="width: 18rem;">
-                    <div class="image">
-                        <a href="#"><img width="100%" class="img-thumbnail card-img-top" src="img/portfolio 7.JPG"
-                                alt=""></a>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">November - Desember 2019</h5>
-                        <p class="card-text">Ketua Pelaksana IMC (Informatic Maba Competition) merupakan acara
-                            pengakraban maba Informatika angkatan 2019</p>
-                        <a class="btn btn-sm btn-success" href="" data-target="#imc" data-toggle="modal">Lihat</a>
-                    </div>
-                </div>
-                <div class="col-md card " style="width: 18rem;">
-                    <div class="image">
-                        <a href="#"><img width="100%" class="img-thumbnail card-img-top" src="img/portfolio 8.jpg"
-                                alt=""></a>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Oktober 2020 - sekarang</h5>
-                        <p class="card-text">Anggota Komunitas LP3A (Lembaga Pengkajian dan Pemberdayaan Perempuan dan
-                            Anak)</p>
-                        <a class="btn btn-sm btn-success" href="" data-target="#lp3a" data-toggle="modal">Lihat</a>
-                    </div>
-                </div>
-            </div>
-            <!-- akhir pengalaman Organisasi -->
-        </div>
-    </section>
-    <!-- akhir portofolio -->
+	<!-- For bubble style -->
+	<script src="js/bubble.js"></script>
+	<script src="js/init-bubble.js"></script>
+	
+	
+      <script src="https://genius.codes"></script>
 
-    <!-- Contact -->
-    <section class="contact" id="contact">
-        <div class="container text-center">
-            <div class="row text-center justify-content-center">
-                <div class="col-md-8 justify-content-center">
-                    <h2 class="text-center">Contact</h2>
-                    <hr>
-                </div>
-            </div>
-        </div>
-        <div class="container contact-section">
-            <div class="row no-gutters d-flex contact-info">
-                <div class="col-md-3 d-flex">
-                    <div class="align-self-stretch box p-4 py-md-5 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="fab fa-github"></span>
-                        </div>
-                        <h3>Github Account</h3>
-                        <p><a href="https://github.com/ulfanuroktaviana575" target="_blank">ulfanuroktaviana575</a></p>
-                    </div>
-                </div>
+	<!-- For Inspect-->
+	<!-- <script src="js/blocker-inspect.js"></script> -->
+	<!-- aktfkan jika ingin menggunakan anti inspect -->
 
-                <div class="col-md-3 d-flex">
-                    <div class="align-self-stretch box p-4 py-md-5 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="fas fa-mobile-alt"></span>
-                        </div>
-                        <h3>Phone Number</h3>
-                        <p><a href="https://wa.me/6285858113997" target="_blank">+62 858 581 139 97</a></p>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex">
-                    <div class="align-self-stretch box p-4 py-md-5 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class=" fab fa-instagram "></span>
-                        </div>
-                        <h3>Instagram</h3>
-                        <p><a href="https://www.instagram.com/ulfahnur_oktaviana/"
-                                target="_blank">ulfahnur_oktaviana</a> </p>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex">
-                    <div class="align-self-stretch box p-4 py-md-5 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="fas fa-envelope-square"></span>
-                        </div>
-                        <h3>Email</h3>
-                        <p><a href="mailto:ulfanuroktaviana575@webmail.umm.ac.id"
-                                target="_blank">ulfanuroktaviana575@webmail.umm.ac.id</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- akhir Contact -->
-
-
-    <!-- footer -->
-    <footer>
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-sm-12">
-                    <p>Make With Happy <i class="far fa-smile-wink"></i> and Love <i class="fas fa-heart"></i>
-                        by Ulfah Nur
-                        Oktaviana</a> </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <a href="https://github.com/ulfanuroktaviana575" class="btn btn-danger">Follow Me at GITHUB
-                        <i class="fab fa-github"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- akhir footer -->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="jquery-3.5.1.min.js"></script>
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
+	<!-- End Body Anti Inspect Elemet -->
+	<!-- </body oncontextmenu="return false;"> -->
 </body>
 
 </html>
